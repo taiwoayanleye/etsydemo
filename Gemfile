@@ -14,12 +14,11 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 
-gem 'rails_12factor', group: :production
-
 group :development do
 	gem 'sqlite3'
 end
 
 group :production do
 	gem 'pg'
+	gem 'rails_12factor'
 end
