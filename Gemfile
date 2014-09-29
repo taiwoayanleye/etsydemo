@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'devise'
 
 group :development do
 	gem 'sqlite3'
