@@ -21,9 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
+	<<: *default
   database: estydemo_production
-  pool: 5
-  username: aries
-  password:
