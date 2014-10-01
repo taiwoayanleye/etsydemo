@@ -1,7 +1,7 @@
 <%= form_for @listing, :html => { :multipart => true } do |f| %>
   <% if @listing.errors.any? %>
     <div id="error_explanation", class="alert alert-danger alert-dismissible">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <h4><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h4>
 
       <ul>
