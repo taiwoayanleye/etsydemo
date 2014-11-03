@@ -46,6 +46,12 @@
           <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
           <% end %>
         </li>
+        <li>
+          <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
+        </li>
+        <li>
+          <%= link_to "Sign in with Likedin", user_omniauth_authorize_path(:linkedin) %>
+        </li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>

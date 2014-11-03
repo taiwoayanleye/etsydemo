@@ -238,7 +238,11 @@ Devise.setup do |config|
   config.omniauth :twitter, ENV["TWITTER_APP_ID"], ENV["TWITTER_APP_SECRET"]
   #google
   require 'omniauth-google-oauth2'
-  config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT ID"], ENV["GOOGLE_CLIENT SECRET"], { access_type: "offline", approval_prompt: "" }
+  config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT ID"], ENV["GOOGLE_CLIENT SECRET"]
+  # , "234435146887-rqb980qcccf1n34qe8047220ul9km6vn.apps.googleusercontent.com", "VvD7zgxQvpEUZlKowPT2NTiV"
+  #linkedin
+  require 'omniauth-linkedin'
+  config.omniauth :linkedin, ENV["LINKEDIN_APP_ID"], ENV["LINKEDIN_APP_SECRET"]
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
