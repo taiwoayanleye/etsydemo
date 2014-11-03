@@ -19,6 +19,8 @@ gem "figaro"
 gem 'devise'
 gem 'stripe'
 gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-linkedin'
 
 
 group :development do
