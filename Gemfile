@@ -21,6 +21,9 @@ gem 'stripe'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
+gem 'omniauth-github'
+gem 'omniauth-google'
+gem 'omniauth-facebook'
 
 
 group :development do
