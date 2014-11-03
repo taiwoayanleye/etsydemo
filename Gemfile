@@ -22,7 +22,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
 gem 'omniauth-github'
-gem 'omniauth-google'
+gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 
 
