@@ -24,10 +24,13 @@ gem 'omniauth-linkedin'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
+gem 'mandrill-api'
 
 
 group :development do
 	gem 'sqlite3'
+	gem 'better_errors'
+	gem 'binding_of_caller'
 end
 
 group :production do

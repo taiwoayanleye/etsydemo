@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!
 
+  require 'mandrill'
+  mandrill = Mandrill::API.new 'YOUR_API_KEY'
+
   protected
 
   def configure_permitted_parameters

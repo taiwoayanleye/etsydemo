@@ -81,5 +81,20 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Required for Devise. Remember to change localhost:3000 to actual application host
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'etsydemo-0914.herokuapp.com' }
+  # ActionMailer Config
+  # Setup for production - deliveries, no errors raised
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+  
+  config.action_mailer.smtp_settings = {
+  :address              => "smtp.mandrillapp.com",
+  :port                 => 587,
+  :domain               => 'mandrillapp.com',
+  :user_name            => ENV["MANDRILL_USERNAME"],
+  :password             => ENV["MANDRILL_API_KEY"],
+  # :authentication       => 'plain',
+  # :enable_starttls_auto => true  }
 end
