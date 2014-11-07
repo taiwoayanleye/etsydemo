@@ -1,5 +1,4 @@
-# THIS FILE IS FOUND WITHIN config/initializers/mandrill.rb
 require 'mandrill'
- 
-# Use an environment variable instead of placing the key in source code
-MANDRILL = Mandrill::API.new ENV["MANDRILL_APIKEY"]
+m = Mandrill::API.new # All official Mandrill API clients will automatically pull your API key from the environment
+rendered = m.templates.render 'MyTemplate', [{:name => 'main', :content => 'The main content block'}]
+puts rendered['html'] # print out the rendered HTML
