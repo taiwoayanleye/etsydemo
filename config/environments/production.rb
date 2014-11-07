@@ -96,5 +96,6 @@ Rails.application.configure do
   :user_name            => ENV["MANDRILL_USERNAME"],
   :password             => ENV["MANDRILL_API_KEY"],
   # :authentication       => 'plain',
-  # :enable_starttls_auto => true  }
+  # :enable_starttls_auto => true 
+  }
 end
