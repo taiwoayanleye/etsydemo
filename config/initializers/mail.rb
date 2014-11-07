@@ -1,4 +1,12 @@
-require 'mandrill'
-m = Mandrill::API.new # All official Mandrill API clients will automatically pull your API key from the environment
-rendered = m.templates.render 'MyTemplate', [{:name => 'main', :content => 'The main content block'}]
-puts rendered['html'] # print out the rendered HTML
+ActionMailer::Base.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587,
+    :user_name => ENV['MANDRILL_USERNAME'],
+    :password  => ENV['MANDRILL_API_KEY'],
+    :domain    => 'heroku.com'
+  }
+ActionMailer::Base.delivery_method = :smtp
+
+MandrillMailer.configure do |config|
+  config.api_key = ENV['MANDRILL_API_KEY']
+end

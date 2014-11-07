@@ -25,6 +25,7 @@ gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'mandrill-api'
+gem 'mandrill_mailer'
 
 
 group :development do
