@@ -13,7 +13,7 @@ Devise.setup do |config|
   config.mailer_sender = ENV["MANDRILL_USERNAME"]
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'MyMailer'
+  config.mailer = 'UserMailer'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
