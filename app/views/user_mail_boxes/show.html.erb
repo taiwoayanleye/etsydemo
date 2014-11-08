@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user_mail_box.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_mail_box.email %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @user_mail_box.login %>
+</p>
+
+<%= link_to 'Edit', edit_user_mail_box_path(@user_mail_box) %> |
+<%= link_to 'Back', user_mail_boxes_path %>

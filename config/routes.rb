@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :user_mail_boxes
+
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   
   root'listings#index'
