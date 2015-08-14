@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 source 'https://code.stripe.com'
-ruby "2.1.2"
+ruby "2.2.2"
 
 gem 'rails', '4.1.4'
 gem 'sass-rails', '~> 4.0.3'
@@ -17,7 +17,7 @@ gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
-gem 'stripe'
+gem 'stripe', :source => 'https://code.stripe.com/'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
